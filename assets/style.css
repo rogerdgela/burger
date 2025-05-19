@@ -22,3 +22,16 @@ body {
     padding: 0 20px;
 }
 
+.logo a {
+    font-family: 'Calistoga';
+    font-size: 38px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo a span {
+    color: #fe6a0f;
+}
+
+
+
