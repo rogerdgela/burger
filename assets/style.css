@@ -123,10 +123,32 @@ header .menu-icon div {
     height: 600px;
 }
 
+.hero h1 {
+    font-family: 'Calistoga';
+    font-size: 70px;
+    line-height: 74px;
+    
+}
 
+.hero p {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 40px 0;
+}
 
+.hero .button {
+    display: inline-block;
+    background-color: #fe6a0f;
+    font-weight: 500;
+    color: #fff;
+    padding: 15px 80px;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
-
+.hero .button:hover {
+    opacity: 0.8;
+}
 
 @media (max-width: 820px) {
     header nav {
@@ -136,6 +158,28 @@ header .menu-icon div {
     header .menu {
         display: flex;
     }
+
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero .leftside {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .hero .rightside {
+        padding-bottom: 50px;
+    }
+
+    .hero .rightside img {
+        height: 300px;
+    }
+    
+    .hero h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }        
 }
 
 
