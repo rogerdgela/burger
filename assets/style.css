@@ -204,15 +204,63 @@ header .menu-icon div {
     margin: 40px 0;
 }
 
-.products-item {
+.product-item {
     display: block;
     border-radius: 8px;
     overflow: hidden;
     text-decoration: none;
+    position: relative;
 }
 
-.products-item:hover {
+.product-item:hover {
     opacity: 0.8;
+}
+
+.product-item .warning {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #fe6a0f;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.product-item .photo {
+    text-align: center;
+    background-color: #2b2b2b;
+    padding-top: 30px;
+}
+
+.product-item .photo img {
+    max-width: 100%;
+}
+
+.product-item .info {
+    background-color: #1f1f1f;
+    padding: 60px 30px 30px 30px;
+    margin-top: -50px;
+}
+
+.product-item .product-category {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.product-item .product-name {
+    font-family: 'Calistoga';
+    font-size: 32px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.product-item .product-price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fe6a0f;
 }
 
 @media (max-width: 820px) {
@@ -258,7 +306,14 @@ header .menu-icon div {
         flex-direction: column;
         gap: 20px;
     }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-
-
+@media (max-width: 500px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }    
+}
